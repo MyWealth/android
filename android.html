@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>android</title>
+    <style>
+        body{
+            background-color: lightslategrey;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .box{
+            width: 430px;
+            height: 460px;
+            background-color:white;
+            margin: 25px auto;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow:0px 0px 50px 0px #88D1F1;
+            background-color: #E7EAED;
+        }
+
+        .body{
+            width: 200px;
+            height: 97px;
+            background-color: #A4CA39;
+            border-radius: 100px 100px 0 0;
+            margin: 20px auto;
+            position: relative;
+        }
+        .body::before,
+        .body::after{
+            position: absolute;
+            left: 0;
+            top: 40px;
+            content:'';
+            display: block;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: white;
+        }
+        .body::after{
+            left: 56px;
+        }
+        .body::before{
+            left: 120px;
+        }
+        .head{
+            height: 180px;
+            width: 200px;
+            background-color: #A4CA39;
+            margin: 5px auto;
+            position: relative;
+        }
+        .head::before,
+        .head::after{
+            content: '';
+            display: block;
+            width: 50px;
+            height: 80px;
+            background-color: #A4CA39;
+            position: absolute;
+            left: 0 ;
+            top: 180px;
+            border-radius: 0 0 25px 25px;
+        }
+        .head::before{
+            left: 25px;
+        }
+        .head::after{
+            left: 125px;
+        }
+        .di{
+            width: 340px;
+            height: 150px;
+            margin: 0 auto;
+            position: relative;
+            left: 0px;
+            top: -174px;
+        }
+        .di::after,
+        .di::before{
+            content:'';
+            display: block;
+            width: 50px;
+            height: 150px;
+            background-color: #A4CA39;
+            border-radius: 25px;
+        }
+        .di::after{
+            float: right;
+        }
+        .di::before{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="body"></div>
+        <div class="head"></div>
+        <div class="di"></div>
+    </div>
+</body>
+</html>
